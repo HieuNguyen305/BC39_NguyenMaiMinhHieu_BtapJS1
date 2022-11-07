@@ -107,3 +107,25 @@ document.getElementById("sapXepTangDan").onclick = function () {
   var content = "Sắp xếp tăng dần: " + listNumBer;
   document.getElementById("info7").innerHTML = content;
 };
+
+// Bài 8: Tìm số nguyên tố
+function kiemTraSNT(n) {
+  var soNguyenTo = 1;
+  if (n < 2) {
+    return (soNguyenTo = 0);
+  }
+  var i = 2;
+  while (i < n) {
+    if (n % i === 0) {
+      soNguyenTo = 0;
+      break;
+    }
+    i++;
+  }
+  return soNguyenTo;
+}
+document.getElementById("timSNT").onclick = function () {
+  var i = 0;
+  var content = kiemTraSNT(listNumBer[i]);
+  document.getElementById("info8").innerHTML = content;
+};
