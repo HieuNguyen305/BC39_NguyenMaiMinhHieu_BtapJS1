@@ -129,3 +129,38 @@ document.getElementById("timSNT").onclick = function () {
   var content = kiemTraSNT(listNumBer[i]);
   document.getElementById("info8").innerHTML = content;
 };
+
+// Bài 9 : Đếm số nguyên
+document.getElementById("demSoNguyen").onclick = function () {
+  var inTeGer = 0;
+  for (var i = 0; i < listNumBer.length; i++) {
+    var item = listNumBer[i];
+    if (Number.isInteger(item)) {
+      inTeGer++;
+    }
+  }
+  var result = "Có: " + inTeGer + " số nguyên";
+  document.getElementById("info9").innerHTML = result;
+};
+
+// Bài 10 So sánh số lượng số âm và dương
+document.getElementById("soSanh").onclick = function () {
+  var demSoAm = 0;
+  var demSoDuong = 0;
+  for (var i = 0; i < listNumBer.length; i++) {
+    var items = listNumBer[i];
+    if (items > 0) {
+      demSoDuong++;
+    } else if (items < 0) {
+      demSoAm++;
+    }
+    if (demSoDuong > demSoAm) {
+      var result = "Số dương > Số Âm";
+    } else if (demSoAm > demSoDuong) {
+      result = "Số Âm > Số Dương";
+    } else if (demSoAm === demSoDuong) {
+      result = "Số Dương = Số Âm";
+    }
+  }
+  document.getElementById("info10").innerHTML = result;
+};
