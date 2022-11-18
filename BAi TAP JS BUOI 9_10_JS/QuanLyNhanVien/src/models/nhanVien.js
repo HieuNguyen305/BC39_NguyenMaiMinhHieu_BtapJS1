@@ -21,14 +21,12 @@ function NhanVien(
   this.loaiNhanVien = "";
   //method
   this.tinhLuong = function () {
-    if (this.chucVu === "Giam Doc") {
-      this.tongLuong = parsefloat(this.luongCoBan * 3);
-    } else if (this.chucVu === "Truong phong") {
-      this.tongLuong = parsefloat(this.luongCoBan * 2);
-    } else this.tongLuong = parsefloat(this.luongCoBan);
+    if (this.chucVu === "Sếp") {
+      this.tongLuong = parseFloat(this.luongCoBan * 3);
+    } else if (this.chucVu === "Trưởng phòng") {
+      this.tongLuong = parseFloat(this.luongCoBan * 2);
+    } else this.tongLuong = parseFloat(this.luongCoBan);
   };
 
-  this.xeploaiNhanVien = function () {
-    
-  };
+  this.xeploaiNhanVien = function () {};
 }
