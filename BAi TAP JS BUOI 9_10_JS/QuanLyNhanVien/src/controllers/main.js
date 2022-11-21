@@ -55,6 +55,14 @@ function setLocalStorage() {
   //save data to localStorage
   localStorage.setItem("DSNV", string);
 }
+// function getLocalStorage() {
+//   if (localStorage.getItem("DSNV")) {
+//     var string = localStorage.getItem("DSNV");
+//     //convert string => JSON
+//     dsnv.arr = JSON.parse(string);
+//     renderTable(dsnv.arr);
+//   }
+// }
 function getLocalStorage() {
   if (localStorage.getItem("DSNV")) {
     var string = localStorage.getItem("DSNV");
