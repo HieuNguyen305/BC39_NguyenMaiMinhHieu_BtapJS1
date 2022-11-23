@@ -28,22 +28,28 @@ function getInfoNV() {
   );
   // tính tổng lương
   NV.tinhLuong();
+  //xếp loại nhân viên
+  NV.xeploaiNhanVien();
 
   return NV;
 }
 function renderTable(data) {
   var content = "";
   for (var i = 0; i < data.length; i++) {
-    var sv = data[i];
+    var nv = data[i];
     content += `
     <tr>
-      <td>${sv.taiKhoan}</td>
-      <td>${sv.hoTen}</td>
-      <td>${sv.email}</td>
-      <td>${sv.ngayLam}</td>
-      <td>${sv.chucVu}</td>
-      <td>${sv.tongLuong}</td>
-      <td>${sv.loaiNhanVien}</td>
+      <td>${nv.taiKhoan}</td>
+      <td>${nv.hoTen}</td>
+      <td>${nv.email}</td>
+      <td>${nv.ngayLam}</td>
+      <td>${nv.chucVu}</td>
+      <td>${nv.tongLuong}</td>
+      <td>${nv.loaiNhanVien}</td>
+      <td>
+          <button class="btn btn-info" onclick="editNV('${nv.taiKhoan}')">Edit</button>    
+          <button class="btn btn-danger" onclick="deleteNV('${nv.taiKhoan}')">Delete</button>
+      </td>
     </tr>
     `;
   }
@@ -55,14 +61,6 @@ function setLocalStorage() {
   //save data to localStorage
   localStorage.setItem("DSNV", string);
 }
-// function getLocalStorage() {
-//   if (localStorage.getItem("DSNV")) {
-//     var string = localStorage.getItem("DSNV");
-//     //convert string => JSON
-//     dsnv.arr = JSON.parse(string);
-//     renderTable(dsnv.arr);
-//   }
-// }
 function getLocalStorage() {
   if (localStorage.getItem("DSNV")) {
     var string = localStorage.getItem("DSNV");
@@ -70,6 +68,11 @@ function getLocalStorage() {
     dsnv.arr = JSON.parse(string);
     renderTable(dsnv.arr);
   }
+}
+function deleteNV(taiKhoan) {
+  dsnv.xoaNV(taiKhoan);
+  renderTable(dsnv.arr);
+  setLocalStorage();
 }
 /**
  * Thêm Nhân Viên
@@ -81,3 +84,44 @@ getEle("btnThemNV").onclick = function () {
   renderTable(dsnv.arr);
   setLocalStorage();
 };
+
+/**
+ * Edit NV
+ */
+function editNV(taiKhoan) {
+  var nv = dsnv.getinfoNV(taiKhoan);
+  if (nv) {
+    getEle("tknv").value = nv.taiKhoan;
+    getEle("tknv").disabled = true;
+    getEle("name").value = nv.hoTen;
+    getEle("email").value = nv.email;
+    getEle("password").value = nv.matKhau;
+    getEle("datepicker").value = nv.ngayLam;
+    getEle("luongCB").value = nv.luongCoBan;
+    getEle("chucvu").value = nv.chucVu;
+    getEle("gioLam").value = nv.gioLam;
+
+    getEle("btnCapNhat").style.display = "inline-block";
+    getEle("btnThemNV").style.display = "none";
+  }
+}
+
+/**
+ * Update Nv
+ */
+getEle("btnCapNhat").addEventListener("click", function () {
+  var nv = getInfoNV();
+  dsnv.capNhatNV(nv);
+  renderTable(dsnv.arr);
+  setLocalStorage();
+});
+
+/**
+ * Tìm kiếm nhân viên dựa theo xếp loại
+ */
+getEle("btnTimNV").addEventListener("click", function () {
+  // console.log(123);
+  var timNV = getEle("searchName").value;
+  var mangTimKiem = dsnv.timkiemNV(timNV);
+  renderTable(mangTimKiem);
+});

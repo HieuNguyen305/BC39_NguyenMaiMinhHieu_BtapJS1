@@ -28,5 +28,13 @@ function NhanVien(
     } else this.tongLuong = parseFloat(this.luongCoBan);
   };
 
-  this.xeploaiNhanVien = function () {};
+  this.xeploaiNhanVien = function () {
+    if (this.gioLam >= 192) {
+      this.loaiNhanVien = "Xuất sắc";
+    } else if (this.gioLam >= 176) {
+      this.loaiNhanVien = "Giỏi";
+    } else if (this.gioLam >= 160) {
+      this.loaiNhanVien = "Khá";
+    } else this.loaiNhanVien = "Trung bình";
+  };
 }
