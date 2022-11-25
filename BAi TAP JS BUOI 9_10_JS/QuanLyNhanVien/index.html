@@ -198,6 +198,7 @@
 								</div>
 								<input type="text" name="tk" id="tknv" class="form-control input-sm"
 									placeholder="Tài khoản">
+								<div id="errorTK" style="display: none" class="text-danger mt-2"></div>
 							</div>
 
 							<span class="sp-thongbao" id="tbTKNV"></span>
@@ -210,6 +211,7 @@
 								</div>
 								<input type="name" name="name" id="name" class="form-control input-sm"
 									placeholder="Họ và tên">
+								<div id="errorName" style="display: none" class="text-danger mt-2"></div>
 							</div>
 							<span class="sp-thongbao" id="tbTen"></span>
 						</div>
@@ -221,6 +223,7 @@
 								</div>
 								<input type="email" name="email" id="email" class="form-control input-sm"
 									placeholder="Email">
+								<div id="errorEmail" style="display: none" class="text-danger mt-2"></div>
 							</div>
 
 							<span class="sp-thongbao" id="tbEmail"></span>
@@ -233,6 +236,7 @@
 								</div>
 								<input type="password" name="password" id="password" class="form-control input-sm"
 									placeholder="Mật khẩu">
+								<div id="errorMK" style="display: none" class="text-danger mt-2"></div>
 							</div>
 							<span class="sp-thongbao" id="tbMatKhau"></span>
 						</div>
@@ -244,6 +248,7 @@
 								</div>
 								<input type="text" name="ngaylam" id="datepicker" class="form-control"
 									placeholder="Ngày làm">
+									<div id="errorDate" style="display: none" class="text-danger mt-2"></div>
 							</div>
 
 							<span class="sp-thongbao" id="tbNgay"></span>
@@ -256,6 +261,8 @@
 								</div>
 								<input type="text" name="luongCB" id="luongCB" class="form-control input-sm"
 									placeholder="Lương cơ bản">
+								<div id="errorLuong" style="display: none" class="text-danger mt-2"></div>
+
 							</div>
 							<span class="sp-thongbao" id="tbLuongCB"></span>
 						</div>
@@ -270,6 +277,7 @@
 									<option>Trưởng phòng</option>
 									<option>Nhân viên</option>
 								</select>
+								<div id="errorChucVu" style="display: none" class="text-danger mt-2"></div>
 							</div>
 
 							<span class="sp-thongbao" id="tbChucVu"></span>
@@ -282,6 +290,7 @@
 								</div>
 								<input type="text" name="gioLam" id="gioLam" class="form-control input-sm"
 									placeholder="Giờ làm">
+								<div id="errorTime" style="display: none" class="text-danger mt-2"></div>
 							</div>
 							<span class="sp-thongbao" id="tbGiolam"></span>
 						</div>
@@ -330,6 +339,7 @@
 	</script>
 	<script src="./src/models/dsnv.js"></script>
 	<script src="./src/models/nhanVien.js"></script>
+	<script src="./src/models/validation.js"></script>
 	<script src="./src/controllers/main.js"></script>
 </body>
 

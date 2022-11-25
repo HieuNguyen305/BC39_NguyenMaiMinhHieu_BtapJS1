@@ -1,5 +1,6 @@
 // tạo đối tượng dsnv theo kiểu global
 var dsnv = new DanhSachNhanVien();
+var validation = new Validation();
 getLocalStorage();
 
 function getEle(id) {
@@ -15,6 +16,99 @@ function getInfoNV() {
   var luongCoBan = getEle("luongCB").value;
   var chucVu = getEle("chucvu").value;
   var gioLam = getEle("gioLam").value;
+
+  // Create Flag To Check Validation
+  var flag = true;
+  //Check tài khoản
+  flag =
+    validation.kiemTraRong(
+      taiKhoan,
+      "errorTK",
+      "(*) Vui lòng nhập tài khoản"
+    ) &&
+    validation.kiemTraDoDaiKyTu(
+      taiKhoan,
+      "errorTK",
+      "(*) Vui lòng nhập từ 4-6 kí tự",
+      4,
+      10
+    );
+  // check họ tên
+  /**
+   * &= Meaning :
+   * // check họ tên
+   * flag &= false
+   * // check taiKhoan
+   * flag = flag(hoTen) && false(hoTen)
+   */
+  flag &=
+    validation.kiemTraRong(hoTen, "errorName", "(*) Vui lòng nhập họ tên") &&
+    validation.kiemTraChuoiKiTu(
+      hoTen,
+      "errorName",
+      "(*) Vui lòng nhập chuỗi kí tự"
+    );
+  // check email
+  flag &=
+    validation.kiemTraRong(email, "errorEmail", "(*) Vui lòng nhập Email") &&
+    validation.kiemTraEmail(
+      email,
+      "errorEmail",
+      "(*) Vui lòng nhập đúng định dạng Email"
+    );
+  // check password
+  flag &=
+    validation.kiemTraRong(matKhau, "errorMK", "(*) Vui lòng nhập mật khẩu") &&
+    validation.kiemTraMatKhau(
+      matKhau,
+      "errorMK",
+      "(*) Mật khẩu chứa ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt và 6-10 ký tự",
+      6,
+      10
+    );
+  // check ngày làm
+  // flag &= validation.kiemTraNgayLam(
+  //   datepicker,
+  //   "errorDate",
+  //   "(*) Vui lòng nhập ngày làm"
+  // );
+  // check lương
+  flag &=
+    validation.kiemTraRong(
+      luongCoBan,
+      "errorLuong",
+      "(*) Vui lòng nhập mức lương cơ bản"
+    ) &&
+    validation.kiemTraTienLuong(
+      luongCoBan,
+      "errorLuong",
+      "(*) Mức lương từ 1tr đến 20tr",
+      1000000,
+      20000000
+    );
+  // check chức vụ
+  // flag &= validation.kiemTraChucVu(
+  //   chucvu,
+  //   "errorChucVu",
+  //   "(*) Vui lòng chọn chức vụ"
+  // );
+  // check giờ làm
+  flag &=
+    validation.kiemTraRong(
+      gioLam,
+      "errorTime",
+      "(*) Vui lòng nhập vào giờ làm"
+    ) &&
+    validation.kiemTraSoGioLam(
+      gioLam,
+      "errorTime",
+      "(*) Số giờ làm từ 80-200h",
+      80,
+      200
+    );
+  // Check Validation
+  if (!flag) return;
+
   // tạo đối tượng từ lớp đối tượng Nhân viên
   var NV = new NhanVien(
     taiKhoan,
@@ -79,10 +173,12 @@ function deleteNV(taiKhoan) {
  */
 getEle("btnThemNV").onclick = function () {
   var NV = getInfoNV();
-  dsnv.themNV(NV);
-  //render danh sach nhan vien da them ra UI
-  renderTable(dsnv.arr);
-  setLocalStorage();
+  if (NV) {
+    dsnv.themNV(NV);
+    //render danh sach nhan vien da them ra UI
+    renderTable(dsnv.arr);
+    setLocalStorage();
+  }
 };
 
 /**
