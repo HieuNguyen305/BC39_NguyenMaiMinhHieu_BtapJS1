@@ -67,11 +67,11 @@ function getInfoNV() {
       10
     );
   // check ngày làm
-  // flag &= validation.kiemTraNgayLam(
-  //   datepicker,
-  //   "errorDate",
-  //   "(*) Vui lòng nhập ngày làm"
-  // );
+  flag &= validation.kiemTraNgayLam(
+    ngayLam,
+    "errorDate",
+    "(*) Vui lòng nhập ngày làm"
+  );
   // check lương
   flag &=
     validation.kiemTraRong(
@@ -87,11 +87,11 @@ function getInfoNV() {
       20000000
     );
   // check chức vụ
-  // flag &= validation.kiemTraChucVu(
-  //   chucvu,
-  //   "errorChucVu",
-  //   "(*) Vui lòng chọn chức vụ"
-  // );
+  flag &= validation.kiemTraChucVu(
+    "chucvu",
+    "errorChucVu",
+    "(*) Vui lòng chọn chức vụ"
+  );
   // check giờ làm
   flag &=
     validation.kiemTraRong(

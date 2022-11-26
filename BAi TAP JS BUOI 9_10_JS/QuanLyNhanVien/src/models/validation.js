@@ -56,17 +56,18 @@ function Validation() {
     getEle(errorID).style.display = "block";
     return false;
   };
-  // this.kiemTraNgayLam = function (value, errorID, mess) {
-  //   var content = Date.parse( + yyyy / mm / dd);
-  //   if (value.match(content)) {
-  //     getEle(errorID).innerHTML = "";
-  //     getEle(errorID).style.display = "none";
-  //     return true;
-  //   }
-  //   getEle(errorID).innerHTML = mess;
-  //   getEle(errorID).style.display = "block";
-  //   return false;
-  // };
+  this.kiemTraNgayLam = function (value, errorID, mess) {
+    var dateformat =
+      /^(0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])[\/\-]\d{4}$/;
+    if (value.match(dateformat)) {
+      getEle(errorID).innerHTML = "";
+      getEle(errorID).style.display = "none";
+      return true;
+    }
+    getEle(errorID).innerHTML = mess;
+    getEle(errorID).style.display = "block";
+    return false;
+  };
   this.kiemTraTienLuong = function (value, errorID, mess, min, max) {
     if (min <= value && value <= max) {
       getEle(errorID).innerHTML = "";
@@ -77,17 +78,16 @@ function Validation() {
     getEle(errorID).style.display = "block";
     return false;
   };
-
-  // this.kiemTraChucVu = function (idSelect, errorId, mess) {
-  //   if (getEle(idSelect).selectedIndex !== 0) {
-  //     getEle(errorId).innerHTML = "";
-  //     getEle(errorId).style.display = "none";
-  //     return true;
-  //   }
-  //   getEle(errorId).innerHTML = mess;
-  //   getEle(errorId).style.display = "block";
-  //   return false;
-  // };
+  this.kiemTraChucVu = function (idSelect, errorId, mess) {
+    if (getEle(idSelect).selectedIndex !== 0) {
+      getEle(errorId).innerHTML = "";
+      getEle(errorId).style.display = "none";
+      return true;
+    }
+    getEle(errorId).innerHTML = mess;
+    getEle(errorId).style.display = "block";
+    return false;
+  };
   this.kiemTraSoGioLam = function (value, errorID, mess, min, max) {
     if (min <= value && value <= max) {
       getEle(errorID).innerHTML = "";
