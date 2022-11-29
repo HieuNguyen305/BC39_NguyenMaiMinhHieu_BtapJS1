@@ -10,50 +10,432 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Link CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <div class="mainHeader">
+        <nav class="navbar picNav container navbar-expand-lg">
+            <div>
+                <a href="#">
+                    <img src="./images/PNG FILE/crest.png">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Elements</a>
+                    </li>
+                    <div class="item d-flex align-items-center">
+                        <div class="item_1 px-4">
+                            <a href="#" class="d-flex">
+                                <div>
+                                    <i class="logoPhone fa-solid fa-phone-flip"></i>
+                                </div>
+                                <span class="btn_white"> (+1) 555 234-8765</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item_right d-flex ">
+                        <a href="" class="header-pading">
+                            <div>
+                                <span class="fa-brands fa-twitter header_black"></span>
+                            </div>
+                        </a>
+                        <a href="" class="header-pading">
+                            <div>
+                                <span class="fa-brands fa-facebook-f header_black"></span>
+                            </div>
+                        </a>
+                        <a href="" class="header-pading">
+                            <div>
+                                <span class="fa-brands fa-youtube header_black"></span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div>
+                                <span class="fa-brands fa-instagram header_black"></span>
+                            </div>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="header_img">
             <div class="logo">
                 <img src="./images/PNG FILE/yellow_top_wave_01.png">
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div>
-                        <a href="#">
-                            <img src="./images/PNG FILE/crest.png">
-                        </a>
-                    </div>
-                    <ul class="navbar-nav d-flex justify-content-around">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Courses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Elements</a>
-                        </li>
-                        <button class="btn">(+1) 555 234-8765</button>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        </section>
     </header>
     <!-- End Header -->
+
+    <!-- Carousel -->
+    <section class="bt-bb-port">
+        <div class="bt-bb-cell">
+            <div class="bt-bb-inner">
+                <div class="bt_bb_row_wrapper">
+                    <div class="d-flex container">
+                        <div class="bt-bb-content-left">
+                            <div class="bt-bb-content-left-container">
+                                <div class="bt-bb-content-left-content">
+                                    <h1
+                                        class="bt-bb-content-left-content-tag animate__animated animate__backInLeft animate__delay-1s">
+                                        <p class="about-us">ABOUT US</p>
+                                        <span class="bottom-about-us">The language teaching experts</span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bt-bb-content-right">
+                            <div class="bt-bb-content-right-container">
+                                <div class="bt-bb-content-right-content">
+                                    <h1
+                                        class="bt-bb-content-right-content-tag animate__animated animate__bounceIn animate__delay-1s">
+                                        <img src="/images/PNG FILE/hero_team.png" alt="">
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Carousel -->
+
+    <!-- Our Team -->
+    <section class="our-team">
+        <div class="our-team-container">
+            <div class="our-team-content row container">
+                <div
+                    class="our-team-item col-sm-3 col-6 py-3 mt-lg-0 animate__animated animate__fadeInLeft animate__delay-1s">
+                    <div class="our-team-img">
+                        <img src="./images/JPG FILE/teacher_1.jpg" alt="">
+                    </div>
+                    <div class="our-team-info">
+                        <div class="our-team-info-item container">
+                            <div class="info-top ">
+                                <h4>ITALIAN</h4>
+                                <h3>July Roberts</h3>
+                            </div>
+                            <div class="info-bottom">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="our-team-item col-sm-3 col-6 py-3 mt-lg-0 animate__animated animate__fadeInLeft animate__delay-1s">
+                    <div class="our-team-img">
+                        <img src="./images/JPG FILE/teacher_2.jpg" alt="">
+                    </div>
+                    <div class="our-team-info">
+                        <div class="our-team-info-item">
+                            <div class="info-top">
+                                <h4>FRENCH</h4>
+                                <h3>Jon Stone</h3>
+                            </div>
+                            <div class="info-bottom">
+                                <p>
+                                    Nanotechnology immersion along the information.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="our-team-item col-sm-3 col-6 py-3 mt-lg-0 animate__animated animate__fadeInLeft animate__delay-2s">
+                    <div class="our-team-img">
+                        <img src="./images/JPG FILE/teacher_3.jpg" alt="">
+                    </div>
+                    <div class="our-team-info">
+                        <div class="our-team-info-item">
+                            <div class="info-top">
+                                <h4>JAPANESE</h4>
+                                <h3>Emma Stone</h3>
+                            </div>
+                            <div class="info-bottom">
+                                <p>
+                                    Bring to the table win-win survival strategies to ensure.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="our-team-item col-sm-3 col-6 py-3 mt-lg-0 animate__animated animate__fadeInLeft animate__delay-2s">
+                    <div class="our-team-img">
+                        <img src="./images/JPG FILE/teacher_4.jpg" alt="">
+                    </div>
+                    <div class="our-team-info">
+                        <div class="our-team-info-item">
+                            <div class="info-top">
+                                <h4>CHINESE</h4>
+                                <h3>Mark Lee</h3>
+                            </div>
+                            <div class="info-bottom">
+                                <p>
+                                    Proactive domination. At the end of the day, going forward.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="our-team-item col-sm-3 col-6 py-3 mt-lg-0 animate__animated animate__fadeInLeft animate__delay-3s">
+                    <div class="our-team-img">
+                        <img src="./images/JPG FILE/teacher_5.jpg" alt="">
+                    </div>
+                    <div class="our-team-info">
+                        <div class="our-team-info-item">
+                            <div class="info-top">
+                                <h4>RUSSIAN</h4>
+                                <h3>John Doe</h3>
+                            </div>
+                            <div class="info-bottom">
+                                <p>
+                                    A new normal that has evolved from generation X.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="our-team-item col-sm-3 col-6 py-3 mt-lg-0 animate__animated animate__fadeInLeft animate__delay-3s">
+                    <div class="our-team-img">
+                        <img src="./images/JPG FILE/teacher_6.jpg" alt="">
+                    </div>
+                    <div class="our-team-info">
+                        <div class="our-team-info-item">
+                            <div class="info-top">
+                                <h4>SWEDEN</h4>
+                                <h3>Jane Smith</h3>
+                            </div>
+                            <div class="info-bottom">
+                                <p>
+                                    Heading towards a streamlined cloud solution.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="our-team-item col-sm-3 col-6 py-3 mt-lg-0 animate__animated animate__fadeInLeft animate__delay-4s">
+                    <div class="our-team-img">
+                        <img src="./images/JPG FILE/teacher_7.jpg" alt="">
+                    </div>
+                    <div class="our-team-info">
+                        <div class="our-team-info-item">
+                            <div class="info-top">
+                                <h4>SPANISH</h4>
+                                <h3>Hanna Alverez</h3>
+                            </div>
+                            <div class="info-bottom">
+                                <p>
+                                    Content in real-time will have multiple touchpoints.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="our-team-item col-sm-3 col-6 py-3 mt-lg-0 animate__animated animate__fadeInLeft animate__delay-4s">
+                    <div class="our-team-img">
+                        <img src="./images/JPG FILE/teacher_8.jpg" alt="">
+                    </div>
+                    <div class="our-team-info">
+                        <div class="our-team-info-item">
+                            <div class="info-top">
+                                <h4>ITALIAN</h4>
+                                <h3>July Roberts</h3>
+                            </div>
+                            <div class="info-bottom">
+                                <p>
+                                    Capitalize on low hanging fruit to identify a ballpark.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="img_bottom">
+            <img src="./images/PNG FILE/Wave_White_bottom_right_shape_01.png">
+        </div> -->
+    </section>
+    <!-- End Our Team -->
+
+    <!-- Find Courses -->
+    <section class="find-courses">
+        <div class="find-course-container">
+            <div class="find-course-content container">
+                <div class="find-course-item row ">
+                    <div class="find-course-item-left animate__animated animate__fadeInLeft animate__delay-2s">
+                        <img src="./images/PNG FILE/conatct_inner.png">
+                    </div>
+                    <div class="find-course-item-right animate__animated animate__bounceIn animate__delay-2s">
+                        <p>Find Your Course</p>
+                        <div class="contact-item container">
+                            <div class="input-1 row">
+                                <div class="input-1-name">
+                                    <span class="fa-solid fa-user icon-name"></span>
+                                    <span>
+                                        <input type="text" placeholder="Name" class="input-name">
+                                    </span>
+                                </div>
+                                <div class="input-1-email">
+                                    <span class="fa-solid fa-envelope icon-mail"></span>
+                                    <span>
+                                        <input type="text" placeholder="Email" class="input-email">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="input-2 row">
+                                <div class="input-2-english">
+                                    <span>
+                                        <span class="fa-solid fa-graduation-cap icon-english"></span>
+                                        <input type="text" placeholder="English" class="input-english">
+                                        <ul class="options">
+                                            <li data-raw-value="English" class="selected">English</li>
+                                            <li data-raw-value="French">French</li>
+                                            <li data-raw-value="Spanish">Spanish</li>
+                                            <li data-raw-value="German">German</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="input-3 row ">
+                                <div class="input-3-mes">
+                                    <span class="fa-solid fa-message icon-mes"> </span>
+                                    <div class="message">
+                                        <textarea name="Message" class="mes-input" placeholder="Message" cols="54"
+                                            rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn btn-send">
+                                <button class="send">SEND</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Find Courses -->
+
+    <!-- Footer -->
+    <section class="footer">
+        <footer class="footer-39">
+            <div class="footer-bg-layer">
+                <div class="container py-lg-3">
+                    <div class="row footer-top-39">
+                        <div class="col-lg-6 col-md-5 footer-list-39 mt-5">
+                            <h6 class="footer-title-39">Contact us</h6>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <i class="fa-solid fa-location-pin"></i> Franklin St, Greenpoint Ave
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa-solid fa-phone-flip"></i>
+                                        <a href="tel:+2342 5446 67">+2342 5446 67</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa-solid fa-clock"></i>
+                                        <a href="#">Monday - Friday: 8 AM - 5 PM</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="main-social-footer-39 mt-3">
+                                <ul class="social-icons">
+                                    <li class="facebook">
+                                        <a href="#link" title="Facebook">
+                                            <span class="fa-brands fa-twitter header__black"></span>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#link" title="Twitter">
+                                            <span class="fa-brands fa-instagram header__black"></span>
+                                        </a>
+                                    </li>
+                                    <li class="dribbble"><a href="#link" title="Dribbble">
+                                            <span class="fa-brands fa-facebook-f header__black"></span>
+                                        </a></li>
+                                    <li class="youtube"><a href="#link" title="Youtube">
+                                            <span class="fa-brands fa-youtube header__black"></span>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-7">
+                            <div class="row">
+                                <div class="col-sm-4 col-6 footer-list-39 mt-5">
+                                    <h6 class="footer-title-39">Quick Links</h6>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Courses</a></li>
+                                        <li><a href="#">Schedule</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4 col-6 footer-list-39 mt-5">
+                                    <h6 class="footer-title-39">About</h6>
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Events</a></li>
+                                        <li><a href="#">Get Quote</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div
+                                    class="item-newsletter col-sm-3 animate__animated animate__fadeInLeft animate__delay-2s">
+                                    <div class="item-title new">Newsletter</div>
+                                    <div class="">
+                                        <button class="yourmail">Your Email</button>
+                                        <br />
+                                        <button class="subcribe">SUBCRIBE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- End Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

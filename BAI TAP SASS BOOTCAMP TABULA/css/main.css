@@ -2,4 +2,60 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+header #navbarNav .nav-link {
+  padding-right: 44px;
+  color: #121212;
+  font-weight: 600;
+  font-size: -20px;
+}
+header #navbarNav .nav-link:hover {
+  color: #aa017e;
+}
+header #navbarNav .nav-link::after {
+  content: "";
+  display: block;
+  bottom: 100px;
+  margin-left: 20px;
+  height: 8px;
+  width: 8px;
+  background-color: #aa017e;
+  border-radius: 50%;
+}
+header .header_img .logo {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 130%;
+}
+header .picNav {
+  position: relative;
+  z-index: 5;
+}
+header .header_black {
+  color: #121212;
+  margin-left: 0.2rem;
+}
+header .logoPhone,
+header .btn_white {
+  font-size: 20px;
+  color: #e2ebfc;
+}
+header .item_1 {
+  border: 1px solid #aa017e;
+  padding: 8px 8px;
+  border-radius: 20px 20px;
+  background-color: #aa017e;
+}
+header .item_1 a {
+  text-decoration: none;
+}
+header .item_1:hover {
+  background-color: color-white-1;
+  border: 1px solid #aa017e;
+}
+header .item_1 .header_black span:hover {
+  color: #aa017e;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,64 @@
+header {
+  #navbarNav {
+    .nav-link {
+      padding-right: $fs-8;
+      color: $color-dark-1;
+      font-weight: $fw-2;
+      font-size: $fs-1;
+      &:hover {
+        color: $color-purple-1;
+      }
+      &::after {
+        content: "";
+        display: block;
+        bottom: 100px;
+        margin-left: 20px;
+        height: $fs-3;
+        width: $fs-3;
+        background-color: $color-purple-1;
+        border-radius: 50%;
+      }
+    }
+  }
+  .header_img {
+    .logo {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 130%;
+    }
+  }
+  .picNav {
+    position: relative;
+    z-index: 5;
+  }
+  .header_black {
+    color: $color-dark-1;
+    margin-left: $fs-2;
+  }
+  .logoPhone,
+  .btn_white {
+    font-size: $fs-7;
+    color: $color-white-2;
+  }
+  .item_1 {
+    border: 1px solid $color-purple-1;
+    padding: $fs-3 $fs-3;
+    border-radius: $fs-7 $fs-7;
+    background-color: $color-purple-1;
+    a {
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: color-white-1;
+      border: 1px solid $color-purple-1;
+    }
+
+    .header_black span{
+      &:hover {
+        color: $color-purple-1;
+      }
+    }
+  }
+}
