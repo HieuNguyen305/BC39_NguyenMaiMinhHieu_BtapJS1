@@ -13,49 +13,106 @@ header #navbarNav .nav-link {
 header #navbarNav .nav-link:hover {
   color: #aa017e;
 }
-header #navbarNav .nav-link::after {
-  content: "";
-  display: block;
-  bottom: 100px;
-  margin-left: 20px;
-  height: 8px;
-  width: 8px;
-  background-color: #aa017e;
-  border-radius: 50%;
-}
-header .header_img .logo {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 130%;
-}
-header .picNav {
-  position: relative;
-  z-index: 5;
-}
 header .header_black {
   color: #121212;
-  margin-left: 0.2rem;
+  padding: 10px;
 }
-header .logoPhone,
-header .btn_white {
-  font-size: 20px;
+header .header_black:hover {
+  color: #aa017e;
+}
+header .logoPhone {
+  padding-top: 8px;
   color: #e2ebfc;
+  margin-right: 5px;
+}
+header .header_white {
+  font-size: 15px;
+  color: #e2ebfc;
+  padding-top: 5px;
 }
 header .item_1 {
   border: 1px solid #aa017e;
   padding: 8px 8px;
-  border-radius: 20px 20px;
+  border-radius: 15px 15px;
   background-color: #aa017e;
 }
 header .item_1 a {
   text-decoration: none;
 }
 header .item_1:hover {
-  background-color: color-white-1;
-  border: 1px solid #aa017e;
+  background-color: #ffffff;
+  transition: all 300ms ease;
+  box-shadow: 0 0 0 1px #b61984 inset;
 }
-header .item_1 .header_black span:hover {
+header .item_1:hover i {
   color: #aa017e;
+}
+header .item_1:hover span {
+  color: #aa017e;
+}
+header .header_img .logo {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110%;
+}
+header .picNav {
+  position: relative;
+  z-index: 5;
+}
+
+.bt-bb-content-left {
+  margin: auto;
+}
+
+.about-us {
+  font-size: 20px;
+  margin-bottom: 0.5em;
+  color: #b61984;
+}
+
+.bottom-about-us {
+  font-size: 3.8rem;
+}
+
+.bt_bb_port {
+  z-index: 3;
+  position: relative;
+}
+
+.bt_bb_cell {
+  position: relative;
+}
+
+.bt_bb_row_wrapper {
+  background-image: url(./../../images/PNG\ FILE/Violet_top_left_wave.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.bt_bb_row {
+  max-width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.bt_bb_column {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bt_bb_column_content {
+  background-color: rgb(255, 255, 255);
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.our-team {
+  padding-top: 50px;
+  background-color: #dcd1f3;
+}
+.our-team .our-team-content {
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */

@@ -5,19 +5,49 @@ header {
       color: $color-dark-1;
       font-weight: $fw-2;
       font-size: $fs-1;
+      //   &::after {
+      //     content: "";
+      //   }
       &:hover {
         color: $color-purple-1;
       }
-      &::after {
-        content: "";
-        display: block;
-        bottom: 100px;
-        margin-left: 20px;
-        height: $fs-3;
-        width: $fs-3;
-        background-color: $color-purple-1;
-        border-radius: 50%;
-      }
+    }
+  }
+  .header_black {
+    color: $color-dark-1;
+    padding: $fs-7;
+    &:hover {
+      color: $color-purple-1;
+    }
+  }
+  .logoPhone {
+    padding-top: 8px;
+    color: $color-white-2;
+    margin-right: 5px;
+  }
+  .header_white {
+    font-size: $fs-4;
+    color: $color-white-2;
+    padding-top: 5px;
+  }
+  .item_1 {
+    border: 1px solid $color-purple-1;
+    padding: 8px 8px;
+    border-radius: $fs-4 $fs-4;
+    background-color: $color-purple-1;
+    a {
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: $color-white-1;
+      transition: all 300ms ease;
+      box-shadow: 0 0 0 1px #b61984 inset;
+    }
+    &:hover i {
+      color: $color-purple-1;
+    }
+    &:hover span {
+      color: $color-purple-1;
     }
   }
   .header_img {
@@ -26,39 +56,58 @@ header {
       position: absolute;
       top: 0;
       right: 0;
-      width: 130%;
+      width: 110%;
     }
   }
   .picNav {
     position: relative;
     z-index: 5;
   }
-  .header_black {
-    color: $color-dark-1;
-    margin-left: $fs-2;
-  }
-  .logoPhone,
-  .btn_white {
-    font-size: $fs-7;
-    color: $color-white-2;
-  }
-  .item_1 {
-    border: 1px solid $color-purple-1;
-    padding: $fs-3 $fs-3;
-    border-radius: $fs-7 $fs-7;
-    background-color: $color-purple-1;
-    a {
-      text-decoration: none;
-    }
-    &:hover {
-      background-color: color-white-1;
-      border: 1px solid $color-purple-1;
-    }
+}
 
-    .header_black span{
-      &:hover {
-        color: $color-purple-1;
-      }
-    }
-  }
+.bt-bb-content-left {
+  margin: auto;
+}
+
+.about-us {
+  font-size: 20px;
+  margin-bottom: 0.5em;
+  color: #b61984;
+}
+
+.bottom-about-us {
+  font-size: 3.8rem;
+}
+
+.bt_bb_port {
+  z-index: 3;
+  position: relative;
+}
+
+.bt_bb_cell {
+  position: relative;
+}
+
+.bt_bb_row_wrapper {
+  background-image: url(./../../images/PNG\ FILE/Violet_top_left_wave.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.bt_bb_row {
+  max-width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.bt_bb_column {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bt_bb_column_content {
+  background-color: rgba(255, 255, 255, 1);
+  padding-left: 2em;
+  padding-right: 2em;
 }
