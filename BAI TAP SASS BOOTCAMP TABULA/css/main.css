@@ -87,6 +87,7 @@ header .picNav {
 
 .bt_bb_row_wrapper {
   background-image: url(./../../images/PNG\ FILE/Violet_top_left_wave.png);
+  width: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -115,4 +116,41 @@ header .picNav {
 }
 .our-team .our-team-content {
   margin: auto;
+}
+.our-team .our-team-img img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.our-team .our-team-img img:hover {
+  box-shadow: 1px 1px 20px #999;
+}
+.our-team .our-team-img img:hover img {
+  transition: transform 1s;
+  transform: scale3d(1, 1, 1);
+  transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+}
+.our-team .our-team-info-item {
+  background-color: white;
+  padding-bottom: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid rgba(236, 236, 236, 0.6823529412);
+}
+.our-team .our-team-info-item:hover {
+  box-shadow: 1px 1px 20px #999;
+}
+.our-team .info-top {
+  margin: auto;
+  text-align: center;
+  padding-top: 15px;
+}
+.our-team .info-top h4 {
+  font-size: 15px;
+  color: #aa017e;
+  font-weight: 400;
+}
+.our-team .info-bottom {
+  text-align: center;
+  font-size: 15px;
 }/*# sourceMappingURL=main.css.map */
