@@ -1,0 +1,56 @@
+footer {
+  padding-top: $fs-9;
+  background-image: url(../../images/PNG\ FILE/footer_background.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding-bottom: $fs-9;
+}
+.footer-title-39 {
+  font-size: $fs-10;
+  color: $color-white-3;
+}
+.footer-list-39 ul li {
+  list-style: none;
+}
+.footer-list-39 span {
+  color: $color-white-3;
+}
+.footer-list-39 i {
+  color: $color-white-3;
+}
+.main-social-footer-39 span {
+  margin-right: 20px;
+}
+.main-social-footer-39 span {
+  &:hover {
+    color: $color-dark-1;
+  }
+}
+.footer-list-39 ul li a {
+  color: $color-white-2;
+  text-decoration: none;
+  &:hover {
+    color: #cd69b3;
+  }
+}
+.yourmail {
+  padding: 0 70px;
+  border-radius: $fs-8 $fs-8;
+  border: 1px solid #ededed9d;
+  background-color: $color-purple-1;
+  color: $color-white-1;
+  font-size: $fs-4;
+  margin-bottom: 20px;
+}
+.subcribe {
+  padding: $fs-7 $fs-9;
+  background-color: $color-white-1;
+  border: 1px solid $color-purple-1;
+  border-radius: $fs-8 $fs-8;
+  &:hover {
+    color: white;
+    background-color: $color-purple-1;
+    border-radius: 1px solid $color-purple-1;
+  }
+}

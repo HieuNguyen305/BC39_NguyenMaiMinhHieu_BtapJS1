@@ -110,6 +110,114 @@ header .picNav {
   padding-right: 2em;
 }
 
+.find-courses {
+  background-image: url(../../images/PNG\ FILE/accent_bottom_wave_01.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  padding: 50px 0 50px 0;
+}
+.find-courses .find-courses-item {
+  margin: auto;
+}
+.find-courses .find-course-item-right {
+  border: 1px solid #e2ebfc;
+  padding: 15px;
+  box-shadow: 1px 1px #e2ebfc;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px 10px;
+}
+.find-courses .find-course-item-right p {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 10px;
+}
+.find-courses .input-1,
+.find-courses .input-2 {
+  padding-bottom: 44px;
+}
+.find-courses .input-1-name,
+.find-courses .input-1-email,
+.find-courses .input-3,
+.find-courses .input-2-english,
+.find-courses .message {
+  position: relative;
+}
+.find-courses .input-name {
+  position: relative;
+  padding-left: 2.25rem;
+  margin-right: 5px;
+  border-radius: 10px 10px;
+  padding-top: 5px;
+  border: 1px solid #ededed;
+}
+.find-courses .icon-name {
+  position: absolute;
+  z-index: 2;
+  text-align: left;
+  top: 10px;
+  left: 5px;
+  color: #aa017e;
+}
+.find-courses .icon-mail {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 5px;
+  color: #aa017e;
+}
+.find-courses .input-email {
+  position: relative;
+  padding-left: 2.25rem;
+  margin-left: 5px;
+  border-radius: 10px 10px;
+  padding-top: 5px;
+  border: 1px solid #ededed;
+}
+.find-courses .icon-english {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 5px;
+  color: #aa017e;
+}
+.find-courses .input-english {
+  padding-right: 100%;
+  padding-left: 2.25rem;
+  border-radius: 10px 10px;
+  padding-top: 5px;
+  border: 1px solid #ededed;
+}
+.find-courses .icon-mes {
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  left: 5px;
+  color: #aa017e;
+}
+.find-courses .mes-input {
+  padding-left: 30px;
+  border-radius: 10px 10px;
+  border: 1px solid #ededed;
+}
+.find-courses .btn-send {
+  padding-top: 50px;
+}
+.find-courses .send {
+  padding: 10px 50px;
+  color: #e2ebfc;
+  background-color: #aa017e;
+  border: 1px solid transparent;
+  border-radius: 44px 44px;
+}
+.find-courses .send:hover {
+  color: #aa017e;
+  background-color: #e2ebfc;
+  border: 1px solid #aa017e;
+}
+
 .our-team {
   padding-top: 50px;
   background-color: #dcd1f3;
@@ -121,14 +229,10 @@ header .picNav {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: 0.2s;
 }
 .our-team .our-team-img img:hover {
-  box-shadow: 1px 1px 20px #999;
-}
-.our-team .our-team-img img:hover img {
-  transition: transform 1s;
-  transform: scale3d(1, 1, 1);
-  transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+  transition: transform 0.5s;
 }
 .our-team .our-team-info-item {
   background-color: white;
@@ -153,4 +257,68 @@ header .picNav {
 .our-team .info-bottom {
   text-align: center;
   font-size: 15px;
+}
+
+footer {
+  padding-top: 50px;
+  background-image: url(../../images/PNG\ FILE/footer_background.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+.footer-title-39 {
+  font-size: 30px;
+  color: #f5f9fe;
+}
+
+.footer-list-39 ul li {
+  list-style: none;
+}
+
+.footer-list-39 span {
+  color: #f5f9fe;
+}
+
+.footer-list-39 i {
+  color: #f5f9fe;
+}
+
+.main-social-footer-39 span {
+  margin-right: 20px;
+}
+
+.main-social-footer-39 span:hover {
+  color: #121212;
+}
+
+.footer-list-39 ul li a {
+  color: #e2ebfc;
+  text-decoration: none;
+}
+.footer-list-39 ul li a:hover {
+  color: #cd69b3;
+}
+
+.yourmail {
+  padding: 0 70px;
+  border-radius: 44px 44px;
+  border: 1px solid rgba(237, 237, 237, 0.6156862745);
+  background-color: #aa017e;
+  color: #ffffff;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.subcribe {
+  padding: 10px 50px;
+  background-color: #ffffff;
+  border: 1px solid #aa017e;
+  border-radius: 44px 44px;
+}
+.subcribe:hover {
+  color: white;
+  background-color: #aa017e;
+  border-radius: 1px solid #aa017e;
 }/*# sourceMappingURL=main.css.map */

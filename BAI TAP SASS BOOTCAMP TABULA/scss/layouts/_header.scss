@@ -112,3 +112,113 @@ header {
   padding-left: 2em;
   padding-right: 2em;
 }
+
+.find-courses {
+  background-image: url(../../images/PNG\ FILE/accent_bottom_wave_01.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  padding: 50px 0 50px 0;
+  .find-courses-item {
+    margin: auto;
+  }
+
+  .find-course-item-right {
+    border: 1px solid $color-white-2;
+    padding: $fs-4;
+    box-shadow: 1px 1px $color-white-2;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: $fs-7 $fs-7;
+  }
+
+  .find-course-item-right p {
+    font-size: $fs-10;
+    font-weight: $fw-3;
+    text-align: center;
+    padding-top: $fs-7;
+  }
+  .input-1,
+  .input-2 {
+    padding-bottom: $fs-8;
+  }
+  .input-1-name,
+  .input-1-email,
+  .input-3,
+  .input-2-english,
+  .message {
+    position: relative;
+  }
+  .input-name {
+    position: relative;
+    padding-left: $fs-6;
+    margin-right: 5px;
+    border-radius: $fs-7 $fs-7;
+    padding-top: $fs-3;
+    border: 1px solid #ededed;
+  }
+  .icon-name {
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    top: $fs-7;
+    left: $fs-3;
+    color: $color-purple-1;
+  }
+  .icon-mail {
+    position: absolute;
+    z-index: 2;
+    top: $fs-7;
+    left: $fs-3;
+    color: $color-purple-1;
+  }
+  .input-email {
+    position: relative;
+    padding-left: $fs-6;
+    margin-left: 5px;
+    border-radius: $fs-7 $fs-7;
+    padding-top: $fs-3;
+    border: 1px solid #ededed;
+  }
+  .icon-english {
+    position: absolute;
+    z-index: 2;
+    top: $fs-7;
+    left: $fs-3;
+    color: $color-purple-1;
+  }
+  .input-english {
+    padding-right: 100%;
+    padding-left: $fs-6;
+    border-radius: $fs-7 $fs-7;
+    padding-top: $fs-3;
+    border: 1px solid #ededed;
+  }
+  .icon-mes {
+    position: absolute;
+    z-index: 2;
+    top: $fs-3;
+    left: $fs-3;
+    color: $color-purple-1;
+  }
+  .mes-input {
+    padding-left: $fs-10;
+    border-radius: $fs-7 $fs-7;
+    border: 1px solid #ededed;
+  }
+  .btn-send {
+    padding-top: $fs-9;
+  }
+  .send {
+    padding: $fs-7 $fs-9;
+    color: $color-white-2;
+    background-color: $color-purple-1;
+    border: 1px solid transparent;
+    border-radius: $fs-8 $fs-8;
+    &:hover {
+      color: $color-purple-1;
+      background-color: $color-white-2;
+      border: 1px solid $color-purple-1;
+    }
+  }
+}
