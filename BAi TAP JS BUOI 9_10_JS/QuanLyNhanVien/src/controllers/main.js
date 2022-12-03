@@ -141,7 +141,7 @@ function renderTable(data) {
       <td>${nv.tongLuong}</td>
       <td>${nv.loaiNhanVien}</td>
       <td>
-          <button class="btn btn-info" onclick="editNV('${nv.taiKhoan}')">Edit</button>    
+          <button class="btn btn-info" data-toggle="modal" data-target="#myModal" onclick="editNV('${nv.taiKhoan}')">Edit</button>    
           <button class="btn btn-danger" onclick="deleteNV('${nv.taiKhoan}')">Delete</button>
       </td>
     </tr>
